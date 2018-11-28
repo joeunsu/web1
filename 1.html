@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+
+<!-- css 하려면 style tag를 써야 한다
+{} 안에 범위, 선택자
+; 을 통해 효과 구분, 효과 끝에 ; 넣기
+ -->
+
+
+<!-- .을 찍으면 class를 의미하는 것 -->
+<!-- 아래에 잇는 명령이 더 큰 영향력을 가지게 된다-->
+<!-- class 선택자보다 id 가 더 우선순, id는 #으로 불러낼 수 잇다-->
+<!-- id 는 1번만 나와야한다 -->
+
+<head>
+<title>WEB1 - HTML</title>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- link rel 을 통해 css 파일을 불러오면 속도도 높이고 한번에 여러 페이지 수정, 트래픽도 줄일 수 있음 -->
+
+<!--# 여러분이 파일을 저장하면 UTF-8로 저장이 됩니다. 그럼 웹브라우저에게 UTF-8로 페이지를 열라고 해줘야 합니다.
+그걸 브라우저에게 알려주는 코드가 <meta charset=”utf-8″> 입니다.-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788041-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129788041-1');
+</script>
+
+구글 애널리틱스를 통해 정보를 수집하고 있습니다.
+
+</head>
+
+<!--위에는 본문을 설명, head 로 묶음
+아래는 본문은 body로 묶기로 함-->
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+<div id="grid">
+<ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <!--  <li><a href="2.html" class="saw" style="color:red; text-decoration:underline;">CSS</a></li>-->
+  <li><a href="3.html">JavaScript</a></li>
+</ol>
+
+  <div id="article">
+      <h2> 조은수의 IT STUDY - HTML </h2>
+
+  <br>  <br>
+
+      당신의 이름을 입력하세요
+      <input type="text" onchange="alert('저장되었습니다')"> <br>
+      당신의 나이를 입력하세요
+      <input type="text" onkeydown="alert('입력되었습니다')"> <br>
+
+      <input type="button" value="저장" onclick="alert('감사합니다')">
+
+      <br>  <br>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay;
+      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p>
+      <a href="https://www.w3.org/TR/html5/" target="blank" title="html설명서">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong> creating <u>web</u> pages </strong> and web applications.
+      <br>
+      <!--a href="" 링크 달기, target=blank는 새창으로 열기 title 마우스 오버햇을 때 설명 띄우기-->
+      </p>
+      <img src="test.jpg" width=500>
+      <p>
+      HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML
+      </p>
+
+
+<!-- 라이브리 시티 설치 코드 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MTI3OS8xNzgyNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+</div>
+<!-- 시티 설치 코드 끝 -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bfb56fd79ed6453ccab14ef/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</div>
+
+</body>
+</html>
