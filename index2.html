@@ -30,20 +30,7 @@
   
   
   			<script>
-				function click(v) {
-					
-					if (frogueReadyFlag) {
-						if (v === 'info') {
-							froguePushEvent('clickEvent', {'push1':'info'});
-						} else if (v === 'map') {
-							froguePushEvent('clickEvent', {'name':'map'});
-						} else if (v === 'contact') {
-							froguePushEvent('clickEvent', {'name':'contact'});
-						}
-					}
-
-					return false;
-				}
+				froguePushEvent('clickEvent', {"push1": 'value1'});
 			</script>
 
 
