@@ -55,7 +55,7 @@
 		function htmlReady () {
 			htmlReadyTimer = setTimeout(function() {
 				if (frogueReadyFlag) {
-					froguePushEvent('landingEvent', {event_name: '', event_value1: '', event_value2: ''});
+					froguePushEvent('push1', {event_name: '', event_value1: '', event_value2: ''});
 					htmlReadyTimer = null;
 				} else {
 					htmlReady();
