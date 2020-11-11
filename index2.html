@@ -14,6 +14,12 @@
 <div id="frogue-container" class="position-right-bottom"
       data-chatbot="f84bc02a-ec86-4943-8330-4d0607a6b63e"
       data-user="사용자ID"
+     data-close-use="Y"
+     data-close-bgcolor="#ffffff"
+     data-close-linecolor="#000000"
+     data-move-use="Y"
+     data-move-bgcolor="#ffffff"
+     data-move-linecolor="#000000"
       data-init-key="value"
       ></div>
 <!-- data-init-식별키=값 으로 셋팅하면 챗플로우에 파라미터와 연동가능. 식별키는 소문자만 가능 -->
@@ -28,36 +34,6 @@
 	
 	
 	
-if (document.addEventListener) {
-    // Mozilla, Opera, Webkit
-    document.addEventListener("DOMContentLoaded", function () {
-        document.removeEventListener("DOMContentLoaded", arguments.callee, false);
-        htmlReady();
-    }, false);
-} else if (document.attachEvent) {
-    // Internet Explorer
-    document.attachEvent("onreadystatechange", function () {
-        if (document.readyState === "complete") {
-            document.detachEvent("onreadystatechange", arguments.callee);
-            htmlReady();
-        }
-    });
-}
-
-
-var htmlReadyTimer = null;
-//DOM이 모두 로드 되었을 때
-function htmlReady () {
-    htmlReadyTimer = setTimeout(function() {
-        if (frogueReadyFlag) {
-            froguePushEvent('landingEvent', {event_name: '', event_value1: '', event_value2: ''});
-            htmlReadyTimer = null;
-        } else {
-            htmlReady();
-        }
-   }, 500);
-}
-
 	
 </script>
 	
