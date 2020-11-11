@@ -34,7 +34,7 @@
 	
 	</script>
 	
-	<script>
+<script>
 		if (document.addEventListener) {
 			// Mozilla, Opera, Webkit
 			document.addEventListener("DOMContentLoaded", function () {
@@ -55,7 +55,7 @@
 		function htmlReady () {
 			htmlReadyTimer = setTimeout(function() {
 				if (frogueReadyFlag) {
-					froguePushEvent('push1', {event_name: '', event_value1: '', event_value2: ''});
+					froguePushEvent('landingEvent', {event_name: '', event_value1: '', event_value2: ''});
 					htmlReadyTimer = null;
 				} else {
 					htmlReady();
@@ -64,7 +64,6 @@
 
 		}
 	</script>
-
 	
 	
 	
