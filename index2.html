@@ -55,12 +55,12 @@
 		//DOM이 모두 로드 되었을 때
 		function htmlReady () {
 			htmlReadyTimer = setTimeout(function() {
-				if (true) {
-					htmlReadyTimer = null;
-				} else {
-					froguePushEvent('landingEvent', {'name':'info'});
-					htmlReady();
-				}
+			  if (frogueReadyFlag) {
+            froguePushEvent('clickEvent', {"param1": 'landingEvent', "param2": 'https://danbee.ai/chatflow/4321f02b-ab35-4d95-bc26-adf2b879ba59/eventFlow.do'}); 
+            htmlReadyTimer = null;
+        } else {
+            htmlReady();
+        }
 			}, 500);
 
 		}
