@@ -32,43 +32,12 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'frogue-embed'));
 		
+	
+	froguePushEvent('clickEvent', {"param1": 'landingEvent', "param2": 'https://danbee.ai/chatflow/4321f02b-ab35-4d95-bc26-adf2b879ba59/eventFlow.do'}); 
+	
 	</script>
 
-		<script>
-	
-			if (document.addEventListener) {
-			// Mozilla, Opera, Webkit
-			document.addEventListener("DOMContentLoaded", function () {
-				document.removeEventListener("DOMContentLoaded", arguments.callee, false);
-				htmlReady();
-			}, false);
-		} else if (document.attachEvent) {
-			// Internet Explorer
-			document.attachEvent("onreadystatechange", function () {
-				if (document.readyState === "complete") {
-					document.detachEvent("onreadystatechange", arguments.callee);
-					htmlReady();
-				}
-			});
-		}
-		var htmlReadyTimer = null;
-		//DOM이 모두 로드 되었을 때
-		function htmlReady () {
-			htmlReadyTimer = setTimeout(function() {
-			  if (frogueReadyFlag) {
-            froguePushEvent('clickEvent', {"param1": 'landingEvent', "param2": 'https://danbee.ai/chatflow/4321f02b-ab35-4d95-bc26-adf2b879ba59/eventFlow.do'}); 
-            htmlReadyTimer = null;
-        } else {
-            htmlReady();
-        }
-			}, 500);
 
-		}
-	
-
-		</script>
-	
-  
 
 
   
